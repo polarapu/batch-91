@@ -1,3 +1,104 @@
-Hello all, Good eveng :)
-Sample line1
-Sample line2
+git init  (to intilize the empty git repo)
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+=======================================
+
+git clone https://github.com/polarapu/batch-91.git
+ls
+cd batch-91
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "label" file1
+git status
+git log
+git show
+git push
+
+------------------------------
+touch file1 file2 file3 file4
+ls
+git add file1 file2 file3 file4
+or
+git add .
+or
+git add *
+or
+git add -A
+
+git commit -m "label" 
+git push
+
+rm file1  (to delete file1)
+git status
+git add file1
+git commit -m "deleted file"
+git push
+
+mkdir dir1
+ls
+cd dir1
+touch f1 f2
+cd ..
+git add .
+git commit -m "sample dir"
+git push
+
+
+================================
+git clone https://github.com/polarapu/batch-91.git
+ls
+cd batch-91
+touch prasad
+git status
+git add prasad
+git status
+git commit -m "sample commit from prasad"
+git status
+git push
+username & passwd
+error ?
+git push
+git pull --rebase
+git push
+----------------
+mkdir prasad-dir
+cd prasad-dir
+touch f1 f2
+cd ..
+git add .
+git commit -m "sample dir"
+git push
+
+--------------------
+rm prasad-dir/f1
+or
+cd prasad-dir
+rm f1
+cd ..
+git status
+git add .
+git commit -m "sample file deleted"
+git push
+
+
+
+
+
+
+
+
+
+	
+
+
+
