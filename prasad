@@ -1,52 +1,52 @@
-jfdfdsfdfgit init  (to intilize the empty git repo)
-d
-gfdfit config --global user.name "Polarapu Prasad"
-git gconfig --global user.email "devopstraining2015@gmail.com"
-dfg
-gitfdg config --list
-bdfbdfbdfgdfbg
-git config --gdfgblobal --unset user.name
-git config --globadfl --unset user.email
-bgfd
-====gf===================================
-g
-gfdbgit clone https://github.com/polarapu/batch-91.git
-lsdfb
-cd badfgbgtch-91
-touch filebgf1
-lsb
-gitfb status
-git afbdd file1
+git init  (to intilize the empty git repo)
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+=======================================
+
+git clone https://github.com/polarapu/batch-91.git
+ls
+cd batch-91
+touch file1
+ls
 git status
-git combgmit -m "label" file1
-git statuhghs
-git logj
-git showjh
-git pushfg
-dfh
----gfh---------------------------
-touch fgbfile1 file2 file3 file4
-lsgf
-git bfadd file1 file2 file3 file4
-orb
-gitfgb add .
-orgn
-git gnadd *
-orgfb
-git agfndd -A
-gfn
-gitg commit -m "label" 
-git dpush
-gftrh
-rm fiytle1  (to delete file1)
-git stajuktus
-git add fiyle1
-git commit hf-m "deleted file"
-git pushdh
-kh
-mkgjgfdir dir1
-lsn
-cd jdir1
+git add file1
+git status
+git commit -m "label" file1
+git status
+git log
+git show
+git push
+
+------------------------------
+touch file1 file2 file3 file4
+ls
+git add file1 file2 file3 file4
+or
+git add .
+or
+git add *
+or
+git add -A
+
+git commit -m "label" 
+git push
+
+rm file1  (to delete file1)
+git status
+git add file1
+git commit -m "deleted file"
+git push
+
+mkdir dir1
+ls
+cd dir1
 touch f1 f2
 cd ..
 git add .
