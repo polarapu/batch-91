@@ -91,7 +91,9 @@ git commit -m "sample file deleted"
 git push
 
 
-
+----------------
+git merge fature
+git merge --abort
 
 
 
