@@ -89,6 +89,10 @@ git status
 git add .
 git commit -m "sample file deleted"
 git push
+---------------
+
+
+git merge --abort
 
 
 
