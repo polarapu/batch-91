@@ -1,0 +1,19 @@
+FROM centos:7.9.2009
+MAINTAINER "Polarapu Prasad"
+RUN touch /opt/file1
+RUN mkdir /opt/dir1
+RUN yum install git -y
+RUN cd /opt && git clone https://github.com/polarapu/batch-91.git
+RUN git config --global user.name "Prasad"
+RUN git config --global user.email "Prasad@gmail.com"
+EXPOSE 87
+RUN yum install wget -y
+RUN mkdir /opt/tomcat
+RUN cd /opt/tomcat && wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz --no-check-certificate
+RUN cd /opt/tomcat && tar -xvf apache-tomcat-10.1.8.tar.gz
+COPY tomcat-users.xml /opt/tomcat/apache-tomcat-10.1.8/conf
+#CMD git --version
+#ENTRYPOINT cat /opt/tomcat/apache-tomcat-10.1.8/conf/tomcat-users.xml
+#ENTRYPOINT sleep 20
+#ENV export JAVA_HOME=/path
+#ENV export M2_HOME=/path
